@@ -31,7 +31,7 @@ csv_data = "result.csv"
 
 
 # Creating csv file
-def csv_creator()
+def csv_creator():
     with open(file_name, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(columns)
