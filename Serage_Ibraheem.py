@@ -42,7 +42,7 @@ def csv_creator():
 
 # to make sure we have unique values of the three columns; create the following function
 def drop_dups(df):
-    final = results.drop_duplicates(subset=["patient_id", "enrollment_start_date", "enrollment_end_date"])
+    final = df.drop_duplicates(subset=["patient_id", "enrollment_start_date", "enrollment_end_date"])
     
     return final
 
